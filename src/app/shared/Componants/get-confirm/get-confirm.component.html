@@ -1,0 +1,13 @@
+<p>
+    {{msg ||'are you sure you want to remove this post?'}}
+</p>
+
+<div class=" d-flex justify-content-between">
+    <button 
+    (click)="onRemove(true)"
+     mat-raised-button color="primary">Yes</button>
+    <button
+    (click)="onRemove(false)"
+     mat-raised-button color="warn">No</button>
+</div>
+   
